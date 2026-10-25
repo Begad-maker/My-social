@@ -25,54 +25,27 @@
       scroll-behavior:smooth;
     }
 
-    :root{
+    :root {
+  --card: rgba(255, 255, 255, 0.05);
+  --text: #ffffff; 
+}
 
-      --bg:#09090d;
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #09090d;
+  background-image: 
+    radial-gradient(circle at top left, rgba(255, 79, 216, 0.12), transparent 25%),
+    radial-gradient(circle at top right, rgba(82, 182, 255, 0.10), transparent 25%),
+    radial-gradient(circle at bottom right, rgba(159, 107, 255, 0.12), transparent 30%),
+    linear-gradient(135deg, #09090d, #101018, #09090d);
+  color: var(--text);
+  overflow-x: hidden;
 
-      --pink:#ff4fd8;
-      --purple:#9f6bff;
-      --blue:#52b6ff;
-      --orange:#ff9f43;
-
-      --text:#f5f5ff;
-
-      --card:
-      rgba(255,255,255,.05);
-
-    }
-
-    body{
-
-      font-family:'Outfit',sans-serif;
-
-      background:
-
-      radial-gradient(circle at top left,
-      rgba(255,79,216,.12),
-      transparent 25%),
-
-      radial-gradient(circle at top right,
-      rgba(82,182,255,.10),
-      transparent 25%),
-
-      radial-gradient(circle at bottom right,
-      rgba(159,107,255,.12),
-      transparent 30%),
-
-      linear-gradient(
-      135deg,
-      #09090d,
-      #101018,
-      #09090d);
-
-      color:var(--text);
-
-      overflow-x:hidden;
-
-      min-height:100vh;
+  min-height:100vh;
 
       position:relative;
 
+}
     }
 
     /* ======================== */
